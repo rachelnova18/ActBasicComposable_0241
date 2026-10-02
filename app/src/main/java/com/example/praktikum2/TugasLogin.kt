@@ -18,9 +18,13 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
-        // [TARUH KODE BACKGROUND DI BAWAH BARIS INI NANTI - TAHAP 2]
-
-
+// Gambar Background
+        Image(
+            painter = painterResource(id = R.drawable.bg),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
         // Kontainer Utama
         Column(
             modifier = Modifier.fillMaxSize(),
