@@ -39,6 +39,12 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+            // Teks Keterangan diperbesar
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 18.sp,
+                color = Color.Black
+            )
         }
     }
 }
