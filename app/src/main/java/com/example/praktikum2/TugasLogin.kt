@@ -30,8 +30,8 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // [TARUH KODE TAHAP 3 SAMPAI 11 SECARA BERURUTAN DI BAWAH BARIS INI]
 
+            Spacer(modifier = Modifier.height(45.dp))
         }
     }
 }
