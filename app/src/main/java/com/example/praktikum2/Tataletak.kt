@@ -120,3 +120,4 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Col1 Row2 Komponen3")
             }
         }
+        Spacer(modifier = Modifier.height(10.dp))
