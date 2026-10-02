@@ -54,6 +54,16 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 contentDescription = "Logo",
                 modifier = Modifier.size(170.dp)
             )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Teks "Nama" diperbesar
+            Text(
+                text = "Nama",
+                fontSize = 18.sp,
+                color = Color.Red
+            )
+
         }
     }
 }
