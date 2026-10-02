@@ -135,3 +135,15 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 contentScale = ContentScale.Fit
             )
         }
+
+        Text(
+            text = "My",
+            fontSize = 50.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Bold,
+            fontFamily = FontFamily.Cursive,
+            modifier = Modifier.align(alignment = Alignment.Center)
+        )
+    } // Menutup Box Cyan
+} // Menutup Column utama
+} // Menutup fungsi TataletakBoxColumnRow
