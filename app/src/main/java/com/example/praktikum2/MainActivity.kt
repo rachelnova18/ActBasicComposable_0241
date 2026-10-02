@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
                     TataletakBoxColumnRow(
                         modifier = Modifier.padding(innerPadding)
                     )
+                    TugasLogin()
                 }
             }
         }
