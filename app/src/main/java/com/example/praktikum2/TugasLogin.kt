@@ -45,6 +45,15 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 fontSize = 18.sp,
                 color = Color.Black
             )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Logo diperbesar
+            Image(
+                painter = painterResource(id = R.drawable.logo),
+                contentDescription = "Logo",
+                modifier = Modifier.size(170.dp)
+            )
         }
     }
 }
