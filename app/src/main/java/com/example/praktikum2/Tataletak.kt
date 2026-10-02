@@ -24,11 +24,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TataletakRow(modifier: Modifier) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly
-    ) {
+fun TataletakColumn(modifier: Modifier) {
+    Column(modifier = modifier.padding(top = 20.dp, start = 20.dp)) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -66,12 +63,20 @@ fun TataletakBox(modifier: Modifier) {
 @Composable
 fun TataletakCustomHR(modifier: Modifier) {
     Column {
-        Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+        // Baris 1
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
             Text(text = "Komponen3Baris1")
         }
-        Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+        // Baris 2
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
             Text(text = "Komponen1Baris2")
             Text(text = "Komponen2Baris2")
             Text(text = "Komponen3Baris2")
@@ -81,7 +86,10 @@ fun TataletakCustomHR(modifier: Modifier) {
 
 @Composable
 fun TataletakRowColumn(modifier: Modifier) {
-    Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
         Column {
             Text(text = "Komponen1Kolom1")
             Text(text = "Komponen2Kolom1")
@@ -97,7 +105,9 @@ fun TataletakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
+    // Pastikan Anda memiliki file gambar dengan nama yang sesuai di folder res/drawable
     val gambar = painterResource(id = R.drawable.notasinaton)
+
     Column {
         Box(
             modifier = modifier
@@ -106,20 +116,28 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
-            //isi box kuning
+            // Isi box kuning
         }
+
         Column {
-            Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
                 Text(text = "Col1 Row1 Komponen1")
                 Text(text = "Col1 Row1 Komponen2")
                 Text(text = "Col1 Row1 Komponen3")
             }
-            Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
                 Text(text = "Col1 Row2 Komponen1")
                 Text(text = "Col1 Row2 Komponen2")
                 Text(text = "Col1 Row2 Komponen3")
             }
         }
+
         Spacer(modifier = Modifier.height(10.dp))
 
         Box(
@@ -134,16 +152,14 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 contentDescription = null,
                 contentScale = ContentScale.Fit
             )
+            Text(
+                text = "My",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(alignment = Alignment.Center)
+            )
         }
-
-        Text(
-            text = "My",
-            fontSize = 50.sp,
-            color = Color.Red,
-            fontWeight = FontWeight.Bold,
-            fontFamily = FontFamily.Cursive,
-            modifier = Modifier.align(alignment = Alignment.Center)
-        )
-    } // Menutup Box Cyan
-} // Menutup Column utama
-} // Menutup fungsi TataletakBoxColumnRow
+    }
+}
