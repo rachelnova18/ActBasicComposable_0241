@@ -63,6 +63,13 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 fontSize = 18.sp,
                 color = Color.Red
             )
+            // Teks Nama Lengkap diperbesar
+            Text(
+                text = "Rachel Nova Sari",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
 
         }
     }
