@@ -71,6 +71,14 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.Blue
             )
 
+            // Teks NIM diperbesar
+            Text(
+                text = "20240140241",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
         }
     }
 }
